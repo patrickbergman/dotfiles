@@ -6,5 +6,5 @@ Install by running:
 cd ~
 git clone https://github.com/patrickbergman/dotfiles.git .dotfiles
 cd ~/.dotfiles
-./install
+./installer
 ```
