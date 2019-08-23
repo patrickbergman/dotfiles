@@ -1,0 +1,50 @@
+# PHP
+alias phpunit="vendor/bin/phpunit"
+alias phpunitw="phpunit-watcher watch"
+alias art="php artisan"
+alias c="composer"
+alias cu="composer update"
+alias cr="composer require"
+alias ci="composer install"
+alias cda="composer dump-autoload -o"
+alias hostfile="sudo vi /etc/hosts"
+alias migratefresh='php artisan migrate:fresh --seed'
+alias migrate='php artisan migrate'
+alias shit='git reset --hard;git clean -df'
+alias p="phpunit"
+alias pf="phpunit --filter "
+alias d="php artisan dusk"
+alias df="php artisan dusk --filter"
+alias sshconfig="vi ~/.ssh/config"
+
+# Git
+alias gc="git checkout"
+alias gpo="git push origin"
+alias gm="git merge"
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+# List all files colorized in long format
+alias l="ls -laF"
+
+# PhPStorm
+alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
+
+# Redis
+alias flush-redis="redis-cli FLUSHALL"
+
+# VSCode
+alias code='open -a "/Applications/Visual Studio Code.app" "`pwd`"'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
+
+# Flush Directory Service cache
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+# Lock the screen
+alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
